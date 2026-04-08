@@ -1,10 +1,9 @@
 from newsapi import NewsApiClient
 
 #Pick your free API key from the official website
-newsapi = NewsApiClient(api_key='21cfb08747744647b0bc548294b21b41')
+newsapi = NewsApiClient(api_key='')
 
-# /v2/top-headlines
-#top_headlines = newsapi.get_top_headlines(country='jp')
+
 
 top_headlines = newsapi.get_top_headlines(
     language='en'
