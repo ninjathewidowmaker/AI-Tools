@@ -19,10 +19,6 @@ def news_search(query):
     
     return all_articles
 
-# /v2/top-headlines/sources
-#sources = newsapi.get_sources()
-
-#all_articles = news_search("Trump")
 
 all_articles = news_search("Trump")
 
@@ -30,3 +26,5 @@ for title in all_articles['articles'][:10]:
     print(title['title'],title['url'])
     
     
+#That's everything for 8th aprile hopefully  tomorrow I get more serious and commit whole files instead of snippets.
+#I think this two tools are more than enough for a news reader and I'll start a newsrader Agent tommorow.
