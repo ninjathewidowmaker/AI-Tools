@@ -9,7 +9,7 @@ top_headlines = newsapi.get_top_headlines(
     language='en'
 )
 
-# /v2/everything
+
 
 def news_search(query):
     all_articles = newsapi.get_everything(q=query,
