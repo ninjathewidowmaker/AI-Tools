@@ -1,7 +1,7 @@
 from newsapi import NewsApiClient
 
 #Pick your free API key from the official website
-newsapi = NewsApiClient(api_key='')
+newsapi = NewsApiClient(api_key='21cfb08747744647b0bc548294b21b41')
 
 
 
@@ -17,13 +17,17 @@ def news_search(query):
                                       sort_by='relevancy',
                                       page=2)
     
-    return all_articles
+    results = []
+    for title in all_articles['articles'][:10]:
+     a = (title['title'],title['url'])
+     results.append(a)
+    return results
+
 
 
 all_articles = news_search("Trump")
+print(all_articles)
 
-for title in all_articles['articles'][:10]:
-    print(title['title'],title['url'])
     
     
 #That's everything for 8th aprile hopefully  tomorrow I get more serious and commit whole files instead of snippets.
