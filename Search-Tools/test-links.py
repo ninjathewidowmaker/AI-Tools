@@ -11,5 +11,5 @@ def web_scrape(url):
 
    
 #Day 3 And made this into a function.    
-balla = web_scrape('https://minecraft.com')         
+balla = web_scrape('https://wired.com')         
 print(balla)
